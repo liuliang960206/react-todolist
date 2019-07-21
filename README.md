@@ -1,3 +1,51 @@
+目录：
+
+- [第一部分：react](#第一部分react)
+    - [一、react开发环境准备](#一react开发环境准备)  
+        - [A. 通过脚手架工具来编码](#a-通过脚手架工具来编码)
+        - [B. 安装](#b-安装)  
+    - [二、项目目录分析](#二项目目录分析) 
+    - [三、react中的组件](#三react中的组件)        
+        - [创建组件的两种方式](#创建组件的两种方式)   
+            - [1）用class创建组件](#1用class创建组件) 
+            - [2) 函数式创建组件](#2-函数式创建组件)   
+    - [四、JSX语法](#四jsx语法)    
+    - [五、实现一个todolist页面](#五实现一个todolist页面)    
+    - [六、react中的响应式设计和事件绑定](#六react中的响应式设计和事件绑定)    
+    - [七、组件之间的传值](#七组件之间的传值)        - [父组件向子组件传递数据](#父组件向子组件传递数据)    
+    - [八、围绕react衍生的思考](#八围绕react衍生的思考)        - [数据的单向流动](#数据的单向流动)    
+    - [九、PropTypes与DeaultProps](#九proptypes与deaultprops)        
+        - [关于propTypes在官网有更多的写法](#关于proptypes在官网有更多的写法)    
+    - [十、props,state,render的关系](#十propsstaterender的关系)    
+    - [十一、虚拟DOM](#十一虚拟dom)    
+    - [十二、虚拟DOM中的diff算法](#十二虚拟dom中的diff算法)    
+    - [十三、ref](#十三ref)    
+    - [十四、react中的生命周期函数](#十四react中的生命周期函数)        
+        - [14.1 `mouting阶段` （只执行一次）](#141-mouting阶段-只执行一次)       
+        - [14.2 `updating阶段`](#142-updating阶段) 
+        - [14.3 `unmouting阶段`](#143-unmouting阶段)        
+        - [页面什么时候会被渲染](#页面什么时候会被渲染)    
+    - [十五、在react中发送ajax请求](#十五在react中发送ajax请求)        
+        - [15.1 使用Charles 进行接口数据模拟](#151-使用charles-进行接口数据模拟)
+
+- [第二部分：redux](#第二部分redux)    
+    - [一、redux中的store](#一redux中的store)    
+    - [二、actionTypes的拆分](#二actiontypes的拆分)   
+    - [三、使用actionCreate创建统一的action](#三使用actioncreate创建统一的action)    
+    - [五、redux总结](#五redux总结)        
+        - [5.1 redux设计原则：](#51-redux设计原则)
+        - [5.2 redux核心API](#52-redux核心api)    
+    - [六、UI组件和容器组件](#六ui组件和容器组件)   
+    - [七、无状态组件](#七无状态组件)    
+    - [八、redux中发送异步请求获取数据](#八redux中发送异步请求获取数据)    
+    - [九、redux-thunk中间件实现ajax数据请求](#九redux-thunk中间件实现ajax数据请求)    
+    - [十、redux-thunk中间件](#十redux-thunk中间件)  
+    - [十一、redux-saga中间件](#十一redux-saga中间件)
+
+- [第三部分：redux-redux](#第二部分redux-redux)    
+    - [redux-redux写todolist](#redux-redux写todolist)
+
+
 # 第一部分：react
 
 ## 一、react开发环境准备
@@ -934,7 +982,7 @@ function* todoSagas() {
 export default todoSagas;
 ```
 
-# 第二部分：redux-redux
+# 第三部分：redux-redux
 
 ## redux-redux写todolist
 
