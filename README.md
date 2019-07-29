@@ -686,8 +686,35 @@ componentDidMount(){
 
 ### 15.1 使用Charles 进行接口数据模拟
 
+经实践，charles无法请求到数据，原因不明
+
+解决方案：
+
+可以把假数据放在项目中的public目录下，也可以请求到数据
+
+
 
 # 第二部分：redux
+
+
+**类比图书馆借书流程：**
+- 首先，我们要借一本书，
+- 借书的人（React Components），他说‘我要借一本书’（actionCreaters）
+- 这句话被图书馆管理员（store）听见后，管理员去找这本书，但是他自己记不住
+- 于是管理员去查阅图书记录本（reducers），记录本会显示这本书放在哪（一来一回）
+- 管理员（store）知道这本书放在哪，找到这本书，把这本书给借书的人（React Components）
+
+![](https://user-gold-cdn.xitu.io/2019/7/29/16c3da7a5979d92a?w=705&h=414&f=png&s=106193)
+
+
+**store、components、actionCreaters、reducers的关系即为：**
+
+- 首先有一个组件，组件要去获取store中的一些数据
+- actionCreaters通过dispatch(action)方法  让store知道 组件要获取数据
+- store在reducer查组件需要什么数据，reducer返回组件应该拿到的数据
+- store获得数据后把数据 返给 组件
+
+
 
 ## 一、redux中的store
 - 安装：`npm install redux -S`
